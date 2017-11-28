@@ -38,7 +38,8 @@ def calculateSavings():
         savings += float(netIncome)*(preferredSavings/100)
     netIncome *= weeks
 
-    print("In {} weeks, you have saved ${} from ${}. Your tax bracket value is {}%.".format(str(x),str(int(savings)),str(int(netIncome)),str(float(taxPercentage*100))))
+    print("In {} weeks, you have saved ${} from ${}. Your tax bracket value is "
+          "{}%.".format(str(x),str(int(savings)),str(int(netIncome)),str(float(taxPercentage*100))))
     #We want to write something like, how much you made from x amount of money.
 calculateSavings()
 
