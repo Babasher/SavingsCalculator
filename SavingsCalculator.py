@@ -12,6 +12,10 @@ def calculateSavings():
     taxedAmount = weeklyIncome*taxPercentage #How much money will be taken out based on the percentage
     netIncome = weeklyIncome-taxedAmount #Your netIncome
 
+
+    print("Please enter the preferred savings % ")
+    preferredSavings = int(input())
+
     savings = 0
     for x in range(1, weeks+1):
         savings += float(netIncome)*.15
