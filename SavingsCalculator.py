@@ -23,7 +23,7 @@ def calculateSavings():
 
 
 def taxBracket(weeklyIncome):
-    annualIncome = weeklyIncome*50 #50 because of number of working weeks
+    annualIncome = weeklyIncome*weeks #50 because of number of working weeks || Artekka: Changed to weeks to reflect accurate tax bracket
     if (annualIncome > 418400):
         return 0.396
     elif (annualIncome >= 416700):
