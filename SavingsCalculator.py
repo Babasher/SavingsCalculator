@@ -18,7 +18,7 @@ def calculateSavings():
 
     savings = 0
     for x in range(1, weeks+1):
-        savings += float(netIncome)*.15
+        savings += float(netIncome)*(preferredSavings/100)
     netIncome *= weeks
 
     print('In ' + str(x) + ' weeks, you have saved $' + str(int(savings)) + ' from $' + str(int(netIncome)) + ' Your tax bracket value is '
